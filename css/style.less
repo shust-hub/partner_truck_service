@@ -1,0 +1,236 @@
+// FONTS
+ .roboto-reg{
+ 	font-family: 'Roboto', sans-serif;
+ 	font-weight: 400;
+ }
+  .roboto-bold{
+ 	font-family: 'Roboto', sans-serif;
+ 	font-weight: 600;
+ }
+  .roboto-med{
+ 	font-family: 'Roboto', sans-serif;
+ 	font-weight: 500;
+ }
+   .roboto-light{
+ 	font-family: 'Roboto', sans-serif;
+ 	font-weight: 300;
+ }
+
+ // COLORS
+ @base-black: #333333;
+ @base-orange: #ffab09;
+ @base-grey: #f1f1f1;
+
+ //BOOTSTRAP
+ .container-fluid{
+ 	padding-left: 0;
+ 	padding-right: 0;
+ }
+ // HEADER
+header{
+	.logo{
+		margin-top: 11px;
+		p{
+			.roboto-med;
+			font-size: 11px;
+		}
+		&-imgLogo{
+			display: inline-block;
+		}
+	}
+	.link{
+		margin-top: 27px;
+		color: @base-black;
+		a{
+			text-decoration: none;
+			color: @base-black;
+			font-size: 16px;
+			.roboto-bold;
+		}
+		p{
+			.roboto-med;
+			font-size: 12px;
+		}
+	}
+	.navbar{
+		padding-top: 30px;
+		.navbar-nav{
+			width: 100%;
+			display: flex;
+			align-items: center;
+  			justify-content: space-between;
+  			.active{
+				.nav-link{
+					border-bottom: 3px solid @base-orange;
+				}
+			}
+			.nav-item{
+				.nav-link{
+					.roboto-bold;
+					padding-bottom: 1px;
+					padding-left: 1px;
+					padding-right: 1px;
+					font-size: 14px;
+					color: @base-black;
+				}
+			}	
+		}
+	}
+}
+//MAIN SLIDER
+#slider-block{
+	position: relative;
+#slider-text{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.block1{
+	padding-left: 20px;
+		.slider-nav{
+			padding-top: 40px;
+			padding-bottom: 47px;
+			.slider-nav-item{
+				.roboto-med;
+				font-size: 18px;
+				color: white;
+				margin-left: 17px;
+				margin-right: 17px;
+				text-decoration: none;
+			}
+		}
+	p{
+		.roboto-med;
+		font-size: 34px;
+		color: white;
+		background-color: rgba(0, 0, 0, .8);
+		padding: 0px 16px 0px 16px;
+		margin-left: 15px;
+		span{
+			color: @base-orange;
+			font-size: 67px;
+		}
+	}
+}
+}
+//TITLES
+#title{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	p{
+		.roboto-med;
+		font-size: 36px;
+	}
+	.line{
+		height: 10px;
+		width: 560px;
+		background-color: @base-orange;
+	}
+}
+ //TABLE
+ .colm{
+		padding-left: 0;
+		padding-right: 0;
+}
+ #main-table{
+	table{
+		font-size: 14px;
+		text-align: center;
+		background-color: #f1f1f1;
+		th{
+			width: 61px;
+			height: 48px;
+			padding: 0;
+			border: 1px solid #d8d8d8;
+			vertical-align: middle;
+		}
+		td{
+			border: 1px solid #d8d8d8;
+			height: 48px;
+			padding: 0;
+			vertical-align: middle;
+			.roboto-bold;
+		}
+		tr{
+			cursor: pointer;
+		}
+		tr:hover{
+			text-decoration: underline;
+		}
+	}
+ }
+//БЛОК С БРОНИРОВАНИЕМ
+#services{
+	text-align: center;
+	p{
+		font-size: 18px;
+		.roboto-med;
+	}
+	#sec26{
+		font-size: 25px;
+		span{
+			color: @base-orange;
+			font-size: 51px;
+		}
+	}
+	button{
+		border: 3px solid @base-orange;
+		background-color: white;
+		width: 240px;
+  		height: 36px;
+  		font-size: 23px;
+  		.roboto-med;
+	}
+}
+//НАША ЦЕЛЬ
+#goal{
+	background-color: @base-grey;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	font-size: 16px;
+	h3{
+		.roboto-med;
+	}
+	p{
+		.roboto-light;
+	}
+}
+footer{
+	margin-bottom: 48px;
+	.logo{
+		margin-top: 11px;
+		p{
+			.roboto-med;
+			font-size: 11px;
+		}
+		&-imgLogo{
+			display: inline-block;
+		}
+	}
+	.link{
+		margin-top: 27px;
+		color: @base-black;
+		a{
+			text-decoration: none;
+			color: @base-black;
+			font-size: 16px;
+			.roboto-bold;
+		}
+		p{
+			.roboto-med;
+			font-size: 12px;
+		}
+	}
+	.copyright{
+		.roboto-bold;
+		font-size: 18px;
+		padding-top: 5%;
+		p{
+			margin-top: -11px;
+		}
+	}
+}
+		
