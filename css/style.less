@@ -88,51 +88,52 @@ header{
 //MAIN SLIDER
 #slider-block{
 	position: relative;
-#slider-text{
-	position: absolute;
-	top: 0px;
-	width: 100%;
-}
-.slider{
-	.slider-item{
-		overflow: hidden;
-		img{
-			width: 1920px;
-			max-width: inherit;
-  			margin: 0 0 0 40%;
-  			position: relative;
-  			left: -920px;
-		}
-		
+	#slider-text{
+		position: absolute;
+		top: 0px;
+		width: 100%;
 	}
-}
-.block1{
-	padding-left: 20px;
-		.slider-nav{
-			padding-top: 40px;
-			padding-bottom: 47px;
-			.slider-nav-item{
-				.roboto-med;
-				font-size: 18px;
-				color: white;
-				margin-left: 17px;
-				margin-right: 17px;
-				text-decoration: none;
+	.slider{
+		.slider-item{
+			overflow: hidden;
+			img{
+				width: 1920px;
+				max-width: inherit;
+	  			margin: 0 0 0 40%;
+	  			position: relative;
+	  			left: -920px;
 			}
 		}
-	p{
-		.roboto-med;
-		font-size: 34px;
-		color: white;
-		background-color: rgba(0, 0, 0, .8);
-		padding: 0px 16px 0px 16px;
-		margin-left: 15px;
-		span{
-			color: @base-orange;
-			font-size: 67px;
+	}
+	.block1{
+		padding-left: 20px;
+			.slider-nav{
+				padding-top: 40px;
+				padding-bottom: 47px;
+				.slider-nav-item{
+					.roboto-med;
+					font-size: 18px;
+					color: white;
+					margin-left: 17px;
+					margin-right: 17px;
+					text-decoration: none;
+				}
+			}
+		.slider-title{
+			.roboto-med;
+			font-size: 34px;
+			color: white;
+			p{
+				background-color: rgba(0, 0, 0, .8);
+				padding: 0px 16px 0px 16px;
+				margin-left: 15px;
+				span{
+					color: @base-orange;
+					font-size: 67px;
+				}
+			}	
 		}
 	}
-}
 }
 //TITLES
 #title{
@@ -254,4 +255,35 @@ footer{
 		}
 	}
 }
+
+//АДАПТИВ ДЛЯ МОБИЛЬНОЙ ВЕРСИИ
+@media (max-width: 576px){ 
+	//ИЗМЕНЕНИЕ РАЗМЕРОВ ТЕКСТА НА СЛАЙДЕРАХ
+	#slider-block{
+		.block1{
+			text-align: center;
+			.slider-title{
+				font-size: 24px;
+					p{
+					margin-left: -10px;
+					span{
+						font-size: 45px;
+					}
+				}	
+			}
+		}
+	}
+	//TITLES
+	#title{
+		p{
+			font-size: 30px;
+		}
+		.line{
+			height: 10px;
+			width: 560px;
+			background-color: @base-orange;
+		}
+	}
+}
+
 		
